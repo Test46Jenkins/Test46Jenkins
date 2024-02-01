@@ -1,5 +1,17 @@
 version: 0.0
 os: linux
 files:
- - source: /
-   destination: /var/www/html
+  - source: /
+    destination: /home/node/apps/nifty-nest-operations
+file_exists_behavior: OVERWRITE
+hooks:
+  ApplicationStart:
+    - location: script/before-install.sh
+      timeout: 360
+      runas: root
+    - location: script/permissions.sh
+      timeout: 360
+      runas: root
+    - location: script/deploy.sh
+      timeout: 1500
+      runas: node
