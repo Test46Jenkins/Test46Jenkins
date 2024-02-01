@@ -3,16 +3,3 @@ os: linux
 files:
  - source: /
    destination: /var/www/html
-hooks:
- BeforeInstall:
-   - location: script/start_server.sh
-     timeout: 300
-     runas: root
- AfterInstall:
-   - location: script/permission.sh
-     timeout: 300
-     runas: root
- ApplicationStart:
-   - location: script/start_server.sh
-     timeout: 300
-runas: root
