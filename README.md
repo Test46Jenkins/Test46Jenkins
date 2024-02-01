@@ -1,12 +1,9 @@
-- 👋 Hi, I’m @Test46Jenkins
-- 👀 I’m interested in ...
-- 🌱 I’m currently learning ...
-- 💞️ I’m looking to collaborate on ...
-- 📫 How to reach me ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
+# Node Hello World
 
-<!---
-Test46Jenkins/Test46Jenkins is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-You can click the Preview link to take a look at your changes.
---->
+Simple node.js app that servers "hello world"
+
+Great for testing simple deployments to the cloud
+
+## Run It
+
+`npm start`
